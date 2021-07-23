@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS t_base_user;
+
+CREATE TABLE t_base_user
+(
+    id INT(20) NOT NULL AUTO_INCREMENT COMMENT '主键',
+    user_name VARCHAR(255) NULL DEFAULT NULL COMMENT '用户姓名',
+    create_time DATETIME NULL DEFAULT NULL COMMENT '创建时间',
+    PRIMARY KEY (id)
+);
